@@ -118,6 +118,7 @@ cd src/postgis-${POSTGIS_VERSION}/doc ; make comments-install ; cd ../..
 
 ldconfig
 
+
 # Clean up
 apt-get clean && rm -rf /var/lib/apt/lists/* && rm -Rf /usr/local/src && apt-get remove -y --purge build-essential gcc-4.7 python python-dev libreadline6-dev zlib1g-dev libssl-dev libxml2-dev libxslt-dev 
 
