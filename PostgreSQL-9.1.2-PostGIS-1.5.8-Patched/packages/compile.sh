@@ -114,6 +114,8 @@ cd src/postgis-${POSTGIS_VERSION} ; make ; cd ../..
 
 cd src/postgis-${POSTGIS_VERSION} ; make install ; cd ../..
 
+cd src/postgis-${POSTGIS_VERSION}/doc ; make comments-install ; cd ../..
+
 ldconfig
 
 # Clean up
