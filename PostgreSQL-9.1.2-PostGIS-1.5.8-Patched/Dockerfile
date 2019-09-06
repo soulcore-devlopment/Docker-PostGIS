@@ -5,7 +5,7 @@ MAINTAINER Alberto Asuero "alberto@geographica.gs"
 # Environment
 ENV POSTGRES_PASSWD postgres 
 ENV ROOTDIR /usr/local/
-ENV POSTGIS_DATABASE pg_postgis
+ENV POSTGIS_DATABASE postgis
 ENV POSTGIS_CONTRIB /usr/local/share/postgresql/contrib/postgis-1.5 
 ENV POSTGRES_DATA_FOLDER /data 
 ENV PG_VERSION 9.1.2 

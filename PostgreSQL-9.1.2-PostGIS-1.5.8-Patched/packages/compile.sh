@@ -39,7 +39,7 @@ done
 
 # Update and apt-get basic packages
 
-apt-get update && apt-get install -y build-essential gcc-4.7 python python-dev libreadline6-dev zlib1g-dev libssl-dev libxml2-dev libxslt-dev locales
+apt-get update && apt-get install -y build-essential gcc-4.7 python python-dev libreadline6-dev zlib1g-dev libssl-dev libxml2-dev libxslt-dev locales nano
 
 localedef -i $LOCALE -c -f $ENCODING -A /usr/share/locale/locale.alias ${LOCALE}.${ENCODING}
 
@@ -113,8 +113,6 @@ cd src/postgis-${POSTGIS_VERSION} ; ./configure ; cd ../..
 cd src/postgis-${POSTGIS_VERSION} ; make ; cd ../..
 
 cd src/postgis-${POSTGIS_VERSION} ; make install ; cd ../..
-
-cd src/postgis-${POSTGIS_VERSION}/doc ; make comments-install ; cd ../..
 
 ldconfig
 
