@@ -118,8 +118,4 @@ ldconfig
 
 
 # Clean up
-apt-get clean && rm -rf /var/lib/apt/lists/* && rm -Rf /usr/local/src && apt-get remove -y --purge build-essential gcc-4.7 python python-dev libreadline6-dev zlib1g-dev libssl-dev libxml2-dev libxslt-dev 
-
-chmod 755 /usr/local/bin/run.sh
-
-chown postgres:postgres /usr/local/bin/run.sh
+apt-get clean && rm -rf /var/lib/apt/lists/* && rm -Rf /usr/local/src && apt-get remove -y --purge build-essential gcc-4.7 python python-dev libreadline6-dev zlib1g-dev libssl-dev libxml2-dev libxslt-dev
